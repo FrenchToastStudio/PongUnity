@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class ControleRaquette : MonoBehaviour
+public class ControleRaquetteGauche : MonoBehaviour
 {
 
 	private Rigidbody raquette;
@@ -20,11 +20,11 @@ public class ControleRaquette : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	if (Input.GetKey("up")){
+    	if (Input.GetKey("w")){
 		    float y = transform.position.y + 0.1f;
 		    transform.position = new Vector2(transform.position.x, y);
 	    }
-	    if (Input.GetKey("down")){
+	    if (Input.GetKey("s")){
 		    float y = transform.position.y - 0.1f;
 		    transform.position = new Vector2(transform.position.x, y);
 	    }
