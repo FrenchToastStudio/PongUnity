@@ -14,6 +14,8 @@ public class ControleBalle : MonoBehaviour
 
 	private bool estEnMouvement = false;
 
+    public Pointage pointage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -69,11 +71,17 @@ public class ControleBalle : MonoBehaviour
     	}
 
     	// arrêter la balle et la remettre au centre, lorsqu'elle entre en collision avec le fond du terrain
-    	if(objet.tag == "TerrainFond") {
+    	if(objet.tag == "TerrainFondDroite" || objet.tag == "TerrainFondGauche") {
     		// positionne la balle au centre du terrain
     		transform.position = new Vector2(0, 0);
     		
     		estEnMouvement = false;
+
+    		if(objet.tag == "TerrainFondGauche") {
+                pointage.ajouterPointDroite();
+    		} else {
+                pointage.ajouterPointGauche();
+            }
     	}
     }
 }

@@ -7,7 +7,12 @@ TagManager:
   - RaquetteDroite
   - RaquetteGauche
   - Balle
-  - TerrainCote
+  - TerrainHaut
+  - TerrainBas
+  - TerrainFondGauche
+  - TerrainFondDroite
+  - PointGauche
+  - PointDroite
   layers:
   - Default
   - TransparentFX
