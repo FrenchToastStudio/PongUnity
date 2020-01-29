@@ -7,7 +7,7 @@ public class Pointage : MonoBehaviour
 
 	private int pointDroite = 0;
     private int pointGauche = 0;
-	
+    
     public void ajouterPointDroite() {
         pointDroite += 1;
     }

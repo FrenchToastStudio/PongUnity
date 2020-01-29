@@ -286,7 +286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1655, y: -100}
+  m_AnchoredPosition: {x: 1624, y: -100}
   m_SizeDelta: {x: 150, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &515436339
@@ -590,7 +590,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80, y: -100}
+  m_AnchoredPosition: {x: 111, y: -100}
   m_SizeDelta: {x: 150, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1158459569
@@ -661,7 +661,7 @@ PrefabInstance:
     - target: {fileID: 3931848628437011681, guid: a53a67a2d94f546e5b323cb2a8972ee8,
         type: 3}
       propertyPath: m_TagString
-      value: RaquetteGauche
+      value: Raquette
       objectReference: {fileID: 0}
     - target: {fileID: 4997002749516727003, guid: a53a67a2d94f546e5b323cb2a8972ee8,
         type: 3}
@@ -1210,6 +1210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d62f186051845229611a7ea1eecbdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uniteDeplacement: 0.1
 --- !u!1 &2084429517 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8774548087055169760, guid: efebac9bee4464e08ac9ac276d3b1228,
@@ -1243,7 +1244,7 @@ PrefabInstance:
     - target: {fileID: 3931848628437011681, guid: a53a67a2d94f546e5b323cb2a8972ee8,
         type: 3}
       propertyPath: m_TagString
-      value: RaquetteDroite
+      value: Raquette
       objectReference: {fileID: 0}
     - target: {fileID: 4997002749516727003, guid: a53a67a2d94f546e5b323cb2a8972ee8,
         type: 3}
@@ -1374,5 +1375,10 @@ PrefabInstance:
       propertyPath: pointage
       value: 
       objectReference: {fileID: 2084429523}
+    - target: {fileID: 8774548087055169773, guid: efebac9bee4464e08ac9ac276d3b1228,
+        type: 3}
+      propertyPath: vitesse
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efebac9bee4464e08ac9ac276d3b1228, type: 3}

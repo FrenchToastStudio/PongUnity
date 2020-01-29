@@ -13,7 +13,6 @@ public class AffichagePointage : MonoBehaviour
     void Start()
     {
         affichagePoints = GetComponent<Text>();
-        Debug.Log("gameObject.tag : " + gameObject.tag);
     }
 
     // Update is called once per frame
@@ -21,9 +20,9 @@ public class AffichagePointage : MonoBehaviour
     {
 
     	if(gameObject.tag == "PointDroite") {
-        	affichagePoints.text = points.getPointDroite().ToString();
+            affichagePoints.text = points.getPointDroite().ToString();
         } else {
-        	affichagePoints.text = points.getPointGauche().ToString();
+            affichagePoints.text = points.getPointGauche().ToString();
         }
     }
 }

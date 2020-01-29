@@ -13,6 +13,7 @@ TagManager:
   - TerrainFondDroite
   - PointGauche
   - PointDroite
+  - Raquette
   layers:
   - Default
   - TransparentFX
